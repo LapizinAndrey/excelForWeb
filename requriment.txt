@@ -1,0 +1,21 @@
+Webpack(import/export)
+    Babel
+    SCSS
+    ESLint
+    2 режима сборки (Dev и Prod)
+        Dev --> DevServer, SourceMap, ESLint, Not Minified JS & CSS
+        Prod --> MinifiedCode
+GIT
+    Production
+        1.0.0
+    -------------
+    Development
+        1.2.2
+    1----------------- PULLREQUEST+ ---
+    2--------------------   |
+
+
+prod 1.0.2
+----------------
+dev 1.0.2
+----------------
