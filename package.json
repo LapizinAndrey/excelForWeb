@@ -1,0 +1,52 @@
+{
+  "name": "excelforweb",
+  "version": "1.0.0",
+  "description": "Это подобие excel на чистом js",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development webpack serve",
+    "build": "webpack NODE_ENV=production --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LapizinAndrey/excelForWeb.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel"
+  ],
+  "author": "lapuizn Landrej <lapuzin.andrej@yandex.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LapizinAndrey/excelForWeb/issues"
+  },
+  "homepage": "https://github.com/LapizinAndrey/excelForWeb#readme",
+  "private": true,
+  "browserslist": "> 0.25%, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.3.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "eslint": "^7.13.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-loader": "^4.0.2",
+    "html-webpack-plugin": "^4.5.0",
+    "mini-css-extract-plugin": "^1.3.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "webpack": "^5.5.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-serve": "^3.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
+}
