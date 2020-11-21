@@ -1,5 +1,27 @@
-$red: black;
+@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&display=swap');
+@import "components/header";
+@import "components/toolbar";
+@import "components/formula";
+@import "components/table";
+@import "dashboard";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body{
-  background-color: $red;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 12px;
 }
+
+.excel{
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: .8rem;
+}
+
