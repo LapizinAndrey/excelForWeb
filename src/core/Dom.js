@@ -58,6 +58,57 @@ class Dom {
         return this
     }
 
+    find(selector) {
+        return $(this.$el.querySelector(selector))
+    }
+
+    focus() {
+        this.$el.focus()
+        return this
+    }
+
+    blur() {
+        this.$el.blur()
+        return this
+    }
+
+    text(text) {
+        if (typeof text === 'string') {
+            this.$el.textContent = text
+            return this
+        }
+        if (this.$el.tagName.toLowerCase() === 'input') {
+            return this.$el.value.trim()
+        }
+        return this.$el.textContent.trim()
+    }
+
+    addClass(classname) {
+        this.$el.classList.add(classname)
+        return this
+    }
+
+    removeClass(classname) {
+        this.$el.classList.remove(classname)
+        return this
+    }
+
+    id(parse) {
+        if (parse) {
+            const id = this.id()
+            if (id) {
+                const parsed = id.split(':')
+                return {
+                    row: +parsed[0],
+                    col: +parsed[1]
+                }
+            } else {
+                return id
+            }
+        }
+        return this.data.id || ''
+    }
+
     get data() {
         return this.$el.dataset
     }
